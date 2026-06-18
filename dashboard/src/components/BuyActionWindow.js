@@ -10,7 +10,7 @@ const BuyActionWindow=({uid})=>{
     const [stockQuantity,setStockQuantity]=useState(1);
     const [stockPrice,setStockPrice]=useState(0.0);
     const handleBuyClick=()=>{
-        axios.post("http://Zerodha-clone.onrender.com/newOrder",{
+        axios.post("https://zerodha-clone-oaxa.onrender.com/newOrder",{
             name:uid,
             qty:stockQuantity,
             price:stockPrice,
